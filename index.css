@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap');
+
+body{
+    background-color: aquamarine;
+}
+*{
+    padding: 0;
+    margin: 0;
+}
+/* nav */
+
+
+
+.logoo{
+    width: 44px;
+    padding: 0px 7px;
+}
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    /* position: sticky;
+    top: 0px; */
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+  
+    align-items: center;
+}
+nav ul li{
+    padding: 0px 12px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+
+/* container */
+.container{
+    min-height:65vh ;
+    background-color: black;
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    display: flex;
+ 
+    margin: 23px auto ;
+    border-radius: 12px;
+    width: 70%;
+    background-image: url("cover.jpg");
+    background-size: cover;
+}
+.songItem{
+    height: 50px;
+    display: flex;
+    background-color: white;
+    color: black;
+    width: 80%;
+    margin: 12px 12px;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 43px;
+}
+.songItem img{
+    width: 36px;
+    height: 30px;
+    margin: 0 23px;
+    border-radius: 44px;
+}
+.timespan{
+    margin: 0px 23px;
+}
+.timespan i{
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 40px;
+}
+
+
+/* bottom */
+.bottom{
+    position: sticky;
+    height: 100px;
+    background-color: black;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    flex-direction: column;
+}
+#myProgressBar{
+    width: 130vh;
+    color: blue;
+    cursor: pointer;
+    
+}
+.icons{
+    margin-top: 15px;
+}
+.icons i{
+    cursor: pointer;
+}
+.songInfo{
+    position: absolute;
+    left: 10vh;
+    font-family: 'Ubuntu', sans-serif;
+}.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+
+@media only screen and (max-width:400px){
+    body{
+        background-color: aqua;
+    }
+    
+}
